@@ -1,0 +1,14 @@
+.timeline {
+    padding: 60px;
+    text-align: center;
+}
+
+.item {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+span {
+    font-weight: bold;
+    margin-right: 10px;
+}

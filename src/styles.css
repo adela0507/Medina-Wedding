@@ -1,13 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
-:root {
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    background: #ddd;
+    color: var(--text-dark);
+}
 
-    --sage: #7a9780;
-    --sage-dark: #5f7864;
-    --sage-light: #dfe8df;
+/* container principal tip invitație */
+.invite-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
 
-    --cream: #f7f4ef;
-    --white: #ffffff;
+/* fiecare coloană */
+.invite-column {
+    width: 320px;
+    background: var(--cream);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
 
-    --text: #2d2d2d;
+/* secțiuni verzi */
+.section-green {
+    background: var(--green);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
 
+.section-cream {
+    background: var(--cream);
+    padding: 25px;
+    text-align: center;
 }
