@@ -1,14 +1,151 @@
-.timeline {
-    padding: 60px;
+.timeline-fullscreen {
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f1ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.timeline-container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.timeline-main-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 70px;
+  color: #5f6f52;
+  margin-bottom: 80px;
+}
+
+.timeline-card {
+  background: white;
+  border-radius: 30px;
+  padding: 50px;
+  margin-bottom: 40px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.timeline-card h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 48px;
+  color: #5f6f52;
+  margin-bottom: 15px;
+}
+
+.timeline-date {
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.timeline-location {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.map-button {
+  display: inline-block;
+  padding: 14px 28px;
+  border: 2px solid #5f6f52;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #5f6f52;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.map-button:hover {
+  background: #5f6f52;
+  color: white;
+}.timeline-fullscreen {
+    width: 100%;
+    min-height: 100vh;
+    background: #f4f1ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.timeline-container {
+    width: 100%;
+    max-width: 1200px;
     text-align: center;
 }
 
-.item {
-    margin: 20px 0;
-    font-size: 18px;
+.timeline-main-title {
+    font-family: "Great Vibes", cursive;
+    font-size: 70px;
+    color: #5f6f52;
+    margin-bottom: 80px;
 }
 
-span {
-    font-weight: bold;
-    margin-right: 10px;
+.timeline-card {
+    background: white;
+    border-radius: 30px;
+    padding: 50px;
+    margin-bottom: 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.timeline-card:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.timeline-card h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: 48px;
+    color: #5f6f52;
+    margin-bottom: 15px;
+}
+
+.timeline-date {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.timeline-location {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.map-button {
+    display: inline-block;
+    padding: 14px 28px;
+    border: 2px solid #5f6f52;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #5f6f52;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.map-button:hover {
+    background: #5f6f52;
+    color: white;
 }
