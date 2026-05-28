@@ -1,0 +1,174 @@
+:root {
+    --green: #7d8660;
+    --green-dark: #68714f;
+    --cream: #f7f4ef;
+}
+
+/* SECTION */
+.rsvp-section {
+    width: 100%;
+    background: #f7f4ef;
+
+    padding: 120px 20px;
+}
+
+.rsvp-container {
+    max-width: 900px;
+    margin: auto;
+
+    text-align: center;
+}
+
+/* SUBTITLE */
+.section-subtitle {
+    display: block;
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: var(--green);
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+/* TITLE */
+.rsvp-title {
+    font-family: "Great Vibes", cursive;
+
+    font-size: 82px;
+
+    color: var(--green);
+
+    margin-bottom: 35px;
+}
+
+/* TEXT */
+.rsvp-text {
+    max-width: 700px;
+
+    margin: auto;
+    margin-bottom: 70px;
+
+    font-size: 20px;
+    line-height: 1.9;
+
+    color: var(--green);
+}
+
+/* GRID */
+.rsvp-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+    margin-bottom: 50px;
+}
+
+/* CARD */
+.rsvp-card {
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.06);
+
+    border: 1px solid rgba(125, 134, 96, 0.08);
+
+    transition: 0.3s;
+}
+
+.rsvp-card:hover {
+    transform: translateY(-5px);
+}
+
+.rsvp-icon {
+    font-size: 50px;
+
+    margin-bottom: 20px;
+}
+
+.rsvp-card h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 34px;
+
+    color: var(--green);
+
+    margin-bottom: 15px;
+
+    font-weight: 500;
+}
+
+.rsvp-card a {
+    font-size: 24px;
+
+    color: var(--green);
+
+    text-decoration: none;
+}
+
+/* BUTTON */
+.whatsapp-btn {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    background: var(--green);
+
+    color: white;
+
+    padding: 18px 40px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background: var(--green-dark);
+
+    transform: scale(1.05);
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+
+    .rsvp-section {
+        padding: 80px 15px;
+    }
+
+    .rsvp-title {
+        font-size: 56px;
+    }
+
+    .rsvp-text {
+        font-size: 18px;
+    }
+
+    .rsvp-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rsvp-card {
+        padding: 35px 25px;
+    }
+
+    .rsvp-card h3 {
+        font-size: 28px;
+    }
+
+    .rsvp-card a {
+        font-size: 20px;
+    }
+
+}

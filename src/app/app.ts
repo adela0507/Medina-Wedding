@@ -5,6 +5,7 @@ import { Story } from './components/story/story';
 import { EventDetails } from './components/event-details/event-details';
 import { Timeline } from './components/timeline/timeline';
 import {  CountdownComponent } from './components/countdown/countdown';
+import { Rsvp } from './components/rsvp/rsvp';
 
 @Component({
   selector: 'app-root',
@@ -15,8 +16,7 @@ import {  CountdownComponent } from './components/countdown/countdown';
     EventDetails,
     Timeline,
     CountdownComponent,
-    CountdownComponent
-],
+    Rsvp],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

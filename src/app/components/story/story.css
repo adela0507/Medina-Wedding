@@ -1,5 +1,280 @@
-.story {
-    padding: 60px;
+:root {
+    --green: #7d8660;
+    --green-dark: #68714f;
+    --cream: #f7f4ef;
+    --text: #2c2c2c;
+}
+
+/* SECTION */
+.story-section {
+    width: 100%;
+    background: #f7f4ef;
+    padding: 100px 20px;
+    overflow: hidden;
+}
+
+.story-container {
+    max-width: 1200px;
+    margin: auto;
     text-align: center;
-    background: #fafafa;
+}
+
+/* SUBTITLE */
+.section-subtitle {
+    display: block;
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: var(--green);
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+/* TITLE */
+.story-title {
+    font-family: "Great Vibes", cursive;
+    font-size: 82px;
+    color: var(--green);
+
+    margin-bottom: 100px;
+
+    background: white;
+
+    display: inline-block;
+
+    padding: 25px 70px;
+
+    position: relative;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* ribbon */
+.story-title::before,
+.story-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 0;
+    height: 0;
+
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+}
+
+.story-title::before {
+    left: -45px;
+    border-right: 45px solid var(--green);
+}
+
+.story-title::after {
+    right: -45px;
+    border-left: 45px solid var(--green);
+}
+
+/* POLAROID GALLERY */
+.polaroid-gallery {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 140px;
+
+    min-height: 760px;
+}
+
+.polaroid {
+    position: absolute;
+
+    background: white;
+
+    padding: 18px 18px 70px;
+
+    border-radius: 6px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+
+    transition: 0.4s;
+}
+
+.polaroid:hover {
+    transform: scale(1.03);
+    z-index: 10;
+}
+
+.polaroid img {
+    width: 340px;
+    height: 470px;
+
+    object-fit: cover;
+}
+
+/* desktop positions */
+.rotate-left {
+    left: 80px;
+    top: 60px;
+    transform: rotate(-8deg);
+}
+
+.rotate-right {
+    right: 80px;
+    top: 30px;
+    transform: rotate(7deg);
+}
+
+.center-photo {
+    z-index: 5;
+    bottom: 0;
+}
+
+/* FAMILY */
+.family-section {
+    margin-bottom: 80px;
+}
+
+.family-section h2 {
+    font-family: "Great Vibes", cursive;
+
+    font-size: 60px;
+
+    color: var(--green);
+
+    margin-bottom: 35px;
+}
+
+/* GRID */
+.family-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.family-card {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+
+    border: 1px solid rgba(125, 134, 96, 0.08);
+}
+
+.family-card:hover {
+    transform: translateY(-5px);
+}
+
+/* SAME TEXT SIZE */
+.family-card h3,
+.family-card p {
+    font-family: "Playfair Display", serif;
+
+    font-size: 30px;
+
+    color: var(--green);
+
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* MESSAGE */
+.story-message {
+    max-width: 700px;
+
+    margin: auto;
+    margin-top: 80px;
+
+    font-size: 20px;
+    line-height: 1.9;
+
+    color: var(--green);
+}
+
+/* MOBILE */
+@media(max-width: 900px) {
+
+    .story-section {
+        padding: 70px 15px;
+    }
+
+    .story-title {
+        font-size: 54px;
+        padding: 20px 35px;
+        margin-bottom: 70px;
+    }
+
+    .story-title::before,
+    .story-title::after {
+        display: none;
+    }
+
+    /* POZE UNA SUB ALTA */
+    .polaroid-gallery {
+        min-height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 35px;
+
+        margin-bottom: 90px;
+    }
+
+    .polaroid {
+        position: relative !important;
+
+        transform: none !important;
+
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+
+        width: 100%;
+
+        padding: 14px 14px 50px;
+    }
+
+    /* PORTRET FULL WIDTH */
+    .polaroid img {
+        width: 100%;
+        height: 75vh;
+
+        object-fit: cover;
+    }
+
+    .family-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .family-section h2 {
+        font-size: 46px;
+    }
+
+    .family-card h3,
+    .family-card p {
+        font-size: 24px;
+    }
+
+    .story-message {
+        font-size: 18px;
+    }
+
 }
