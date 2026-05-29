@@ -10,7 +10,7 @@
 
     background: #f7f4ef;
 
-    color: #2f3a2d;
+    color: #7d8660;
 
     padding: 140px 20px;
 
@@ -19,55 +19,11 @@
     overflow: hidden;
 }
 
-/* INTRO */
-
-.intro-text {
-
-    max-width: 900px;
-
-    margin: auto auto 100px auto;
-}
-
-.top-text {
-
-    font-size: clamp(1.2rem, 2vw, 1.8rem);
-
-    line-height: 1.8;
-
-    color: #5e6650;
-
-    letter-spacing: 1px;
-
-    margin-bottom: 60px;
-
-    font-family: 'Cormorant Garamond', serif;
-}
-
-.intro-text h1 {
-
-    font-family: 'Great Vibes', cursive;
-
-    font-size: clamp(4rem, 10vw, 7rem);
-
-    color: #7d8660;
-
-    font-weight: 400;
-
-    line-height: 0.9;
-
-    margin: 0;
-}
-
-.intro-text h1 span {
-
-    display: block;
-
-    font-size: 55%;
-}
 
 /* TITLE */
 
 .countdown-header {
+        margin-top: -80px;
 
     display: flex;
 
@@ -76,10 +32,49 @@
     align-items: center;
 
     gap: 30px;
+    font-size: 3.2rem;
+    
+        color: #7d8660;
+    
+        font-weight: 400;
 
     margin-bottom: 70px;
 
     flex-wrap: wrap;
+}
+.dividernume {
+    margin-top: -80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    margin-bottom: 60px;
+}
+.linenume {
+
+    width: 220px;
+
+    height: 1px;
+
+    background: #7d8660;
+}
+
+.heartnume {
+
+    color: #7d8660 !important;
+
+    font-size: 22px;
+
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .line {
