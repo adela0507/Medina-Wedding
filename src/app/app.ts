@@ -13,7 +13,6 @@ import { Rsvp } from './components/rsvp/rsvp';
   imports: [
     Hero,
     Story,
-    EventDetails,
     Timeline,
     CountdownComponent,
     Rsvp],
