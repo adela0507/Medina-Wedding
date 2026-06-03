@@ -11,26 +11,38 @@ body {
     font-family: 'Cormorant Garamond', serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* HERO */
+
 .hero {
+
     min-height: 100vh;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     padding: 20px;
 }
 
 .hero-wrapper {
+
     width: min(92vw, 900px);
 }
 
-/* =========================
-   PLIC REALIST 3D
-========================= */
+/* PLIC */
+
 .envelope {
+
     position: relative;
 
     width: 100%;
+
     aspect-ratio: 1.3/1;
 
     background: #9aa07a;
@@ -43,16 +55,23 @@ body {
         0 40px 80px rgba(0, 0, 0, 0.18),
         0 12px 25px rgba(0, 0, 0, 0.10),
         inset 0 2px 3px rgba(255, 255, 255, 0.18);
+
+    animation: floatEnvelope 5s ease-in-out infinite;
 }
 
 /* TRIUNGHI SUS */
+
 .envelope-flap {
+
     position: absolute;
+
     inset: 0;
 
     background: #868c67;
 
-    clip-path: polygon(0 0, 100% 0, 50% 58%);
+    clip-path: polygon(0 0,
+            100% 0,
+            50% 58%);
 
     z-index: 2;
 
@@ -60,10 +79,14 @@ body {
         drop-shadow(0 25px 22px rgba(0, 0, 0, 0.28)) drop-shadow(0 6px 8px rgba(0, 0, 0, 0.12));
 }
 
-/* LATERALE REALISM */
+/* REFLEXII */
+
 .envelope::before {
+
     content: "";
+
     position: absolute;
+
     inset: 0;
 
     background:
@@ -74,40 +97,53 @@ body {
             rgba(0, 0, 0, 0.08));
 
     z-index: 3;
+
     pointer-events: none;
 }
 
-/* LIGHT GLOW */
 .envelope::after {
+
     content: "";
+
     position: absolute;
+
     inset: 0;
 
     background:
-        radial-gradient(circle at top, rgba(255, 255, 255, 0.10), transparent 60%);
+        radial-gradient(circle at top,
+            rgba(255, 255, 255, 0.10),
+            transparent 60%);
 
     z-index: 1;
 }
 
-/* =========================
-   CONTENT
-========================= */
+/* CONTENT */
+
 .hero-content {
+
     position: absolute;
+
     z-index: 5;
 
     width: 100%;
+
     text-align: center;
 
-    top: 14%;
+    top: 12%;
+
+    padding: 0 30px;
 }
 
+/* NUME */
+
 .hero-content h1 {
+
     font-family: 'Great Vibes', cursive;
-    margin-top: -30px;
 
     display: flex;
+
     flex-direction: column;
+
     gap: 8px;
 
     font-weight: 400;
@@ -118,90 +154,195 @@ body {
 
     line-height: 0.9;
 
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    text-shadow:
+        0 2px 2px rgba(0, 0, 0, .15);
 }
 
 .hero-content h1 span {
-    font-size: 0.45em;
+
+    font-size: .45em;
 }
 
-/* =========================
-   DATA (MAI MARE + ELEGANTĂ)
-========================= */
+/* DATA */
+
 .date {
+
     margin-top: clamp(130px, 18vw, 190px);
 
-    font-size: clamp(2.2rem, 3vw, 3.2rem);
+    font-size: clamp(2rem, 3vw, 3rem);
 
-    letter-spacing: 12px;
+    letter-spacing: 10px;
 
     color: #f3f1ea;
 
     text-transform: uppercase;
 
-    opacity: 0.95;
+    opacity: .95;
 }
 
-/* =========================
-   SCROLL TEXT
-========================= */
+/* BUTON */
+
 .scroll-hint {
-    margin-top: 40px;
 
-    color: #ffffff;
+    margin-top: 45px;
 
-    font-size: 1.4rem;
+    width: fit-content;
 
-    letter-spacing: 2px;
+    margin-left: auto;
+    margin-right: auto;
 
-    opacity: 0.9;
+    background: rgba(255, 255, 255, .12);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    backdrop-filter: blur(8px);
 
-    gap: 6px;
+    border: 1px solid rgba(255, 255, 255, .25);
 
-    animation: bounce 1.8s infinite;
+    color: white;
+
+    padding: 16px 34px;
+
+    border-radius: 999px;
+
+    font-size: 1.15rem;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: .3s;
 }
 
-.scroll-hint span {
-    font-size: 2rem;
-    opacity: 0.8;
+.scroll-hint:hover {
+
+    background: rgba(255, 255, 255, .18);
+
+    transform: translateY(-2px);
 }
 
-@keyframes bounce {
+/* ANIMATIE */
 
-    0%,
-    100% {
+@keyframes floatEnvelope {
+
+    0% {
         transform: translateY(0);
     }
 
     50% {
-        transform: translateY(6px);
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
 
-/* =========================
-   MOBILE
-========================= */
-@media(max-width:768px) {
+/* TABLETA */
 
-    .envelope {
-        aspect-ratio: 0.85/1;
-    }
+@media(max-width:900px) {
 
-    .hero-content {
-        top: 12%;
+    .hero-wrapper {
+
+        width: 96vw;
     }
 
     .date {
-        margin-top: 120px;
-        font-size: 1.7rem;
+
         letter-spacing: 6px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    .hero {
+
+        padding: 10px;
+    }
+
+    .hero-wrapper {
+
+        width: 100%;
+    }
+
+    .envelope {
+
+        aspect-ratio: 0.72 / 1;
+
+        min-height: 88vh;
+
+        border-radius: 16px;
+    }
+
+    .hero-content {
+
+        top: 10%;
+
+        padding: 0 20px;
+    }
+
+    .hero-content h1 {
+
+        font-size: clamp(3.8rem, 14vw, 5.2rem);
+
+        gap: 2px;
+    }
+
+    .date {
+
+        margin-top: 100px;
+
+        font-size: 1.15rem;
+
+        letter-spacing: 3px;
+
+        line-height: 1.5;
     }
 
     .scroll-hint {
-        font-size: 1.2rem;
+
+        margin-top: 50px;
+
+        font-size: 1rem;
+
+        padding: 14px 26px;
+
+        width: auto;
+    }
+}
+
+/* TELEFOANE MICI */
+
+@media(max-width:420px) {
+
+    .envelope {
+
+        min-height: 92vh;
+    }
+
+    .hero-content {
+
+        top: 9%;
+    }
+
+    .hero-content h1 {
+
+        font-size: 3.5rem;
+    }
+
+    .date {
+
+        margin-top: 85px;
+
+        font-size: 1rem;
+
+        letter-spacing: 2px;
+    }
+
+    .scroll-hint {
+
+        margin-top: 40px;
+
+        font-size: .95rem;
     }
 }
