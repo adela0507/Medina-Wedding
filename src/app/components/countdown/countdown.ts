@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-countdown',
@@ -6,6 +6,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
   styleUrls: ['./countdown.css']
 })
 export class CountdownComponent implements OnInit, OnDestroy {
+  constructor(private cdr: ChangeDetectorRef) {}
 
   targetDate = new Date('September 12, 2026 00:00:00');
 
@@ -32,7 +33,7 @@ export class CountdownComponent implements OnInit, OnDestroy {
 
   private updateCountdown(): void {
 
-    const now = new Date().getTime();
+    const now =  Date.now();
 
     const distance = this.targetDate.getTime() - now;
 
