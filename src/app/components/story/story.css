@@ -203,6 +203,7 @@
 }
 
 /* MOBILE */
+/* MOBILE */
 @media(max-width: 900px) {
 
     .story-section {
@@ -220,39 +221,41 @@
         display: none;
     }
 
-    /* POZE UNA SUB ALTA */
+    /* PASTREAZĂ ARANJAREA DE DESKTOP */
     .polaroid-gallery {
-        min-height: auto;
-
-        display: flex;
-        flex-direction: column;
-
-        gap: 35px;
-
+        position: relative;
+        min-height: 550px;
         margin-bottom: 90px;
     }
 
     .polaroid {
-        position: relative !important;
-
-        transform: none !important;
-
-        left: auto !important;
-        right: auto !important;
-        top: auto !important;
-        bottom: auto !important;
-
-        width: 100%;
-
-        padding: 14px 14px 50px;
+        position: absolute;
+        padding: 12px 12px 45px;
     }
 
-    /* PORTRET FULL WIDTH */
     .polaroid img {
-        width: 100%;
-        height: 75vh;
-
+        width: 220px;
+        height: 300px;
         object-fit: cover;
+    }
+
+    .rotate-left {
+        left: 0;
+        top: 60px;
+        transform: rotate(-8deg);
+    }
+
+    .rotate-right {
+        right: 0;
+        top: 30px;
+        transform: rotate(7deg);
+    }
+
+    .center-photo {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: 5;
     }
 
     .family-grid {
@@ -271,7 +274,149 @@
     .story-message {
         font-size: 18px;
     }
+}/* MOBILE */
+@media(max-width: 900px) {
 
+    .story-section {
+        padding: 70px 15px;
+    }
+
+    .story-title {
+        font-size: 54px;
+        padding: 20px 35px;
+        margin-bottom: 70px;
+    }
+
+    .story-title::before,
+    .story-title::after {
+        display: none;
+    }
+
+    /* PASTREAZĂ ARANJAREA DE DESKTOP */
+    .polaroid-gallery {
+        position: relative;
+        min-height: 550px;
+        margin-bottom: 90px;
+    }
+
+    .polaroid {
+        position: absolute;
+        padding: 12px 12px 45px;
+    }
+
+    .polaroid img {
+        width: 220px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .rotate-left {
+        left: 0;
+        top: 60px;
+        transform: rotate(-8deg);
+    }
+
+    .rotate-right {
+        right: 0;
+        top: 30px;
+        transform: rotate(7deg);
+    }
+
+    .center-photo {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: 5;
+    }
+
+    .family-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .family-section h2 {
+        font-size: 46px;
+    }
+
+    .family-card h3,
+    .family-card p {
+        font-size: 24px;
+    }
+
+    .story-message {
+        font-size: 18px;
+    }
+}
+/* MOBILE */
+@media(max-width: 900px) {
+
+    .story-section {
+        padding: 70px 15px;
+    }
+
+    .story-title {
+        font-size: 54px;
+        padding: 20px 35px;
+        margin-bottom: 70px;
+    }
+
+    .story-title::before,
+    .story-title::after {
+        display: none;
+    }
+
+    /* PASTREAZĂ ARANJAREA DE DESKTOP */
+    .polaroid-gallery {
+        position: relative;
+        min-height: 550px;
+        margin-bottom: 90px;
+    }
+
+    .polaroid {
+        position: absolute;
+        padding: 12px 12px 45px;
+    }
+
+    .polaroid img {
+        width: 220px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .rotate-left {
+        left: 0;
+        top: 60px;
+        transform: rotate(-8deg);
+    }
+
+    .rotate-right {
+        right: 0;
+        top: 30px;
+        transform: rotate(7deg);
+    }
+
+    .center-photo {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: 5;
+    }
+
+    .family-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .family-section h2 {
+        font-size: 46px;
+    }
+
+    .family-card h3,
+    .family-card p {
+        font-size: 24px;
+    }
+
+    .story-message {
+        font-size: 18px;
+    }
 }
 /* ========================= */
 /* DIVIDER */
