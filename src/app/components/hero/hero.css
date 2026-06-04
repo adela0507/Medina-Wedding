@@ -176,6 +176,7 @@ html {
 @media(max-width:900px) {
     .date {
         letter-spacing: 6px;
+        font-size: 30px !important;
     }
 }
 
