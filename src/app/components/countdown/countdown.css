@@ -23,7 +23,7 @@
 /* TITLE */
 
 .countdown-header {
-        margin-top: -80px;
+        margin-top: -40px;
 
     display: flex;
 
@@ -32,7 +32,7 @@
     align-items: center;
 
     gap: 30px;
-    font-size: 3.2rem;
+    font-size: 3.0rem;
     
         color: #7d8660;
     
