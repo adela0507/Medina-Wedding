@@ -189,7 +189,7 @@
 
 .rsvp-text {
 
-    max-width: 750px;
+    max-width: 900px !important;
 
     margin: auto;
 
@@ -387,11 +387,11 @@
 
     gap: 12px;
 
-    background: var(--green);
+    background: white;
 
-    color: white;
+    color: var(--green-dark) !important;
 
-    padding: 22px 48px;
+    padding: 20px 45px;
 
     border-radius: 60px;
 
@@ -407,7 +407,7 @@
 
 .whatsapp-btn:hover {
 
-    background: var(--green-dark);
+    background: white;
 
     transform: translateY(-3px);
 }
@@ -445,11 +445,11 @@
 
 .wedding-date {
 
-    margin-top: 10px;
+    margin-top: 30px;
 
-    letter-spacing: 6px;
+    letter-spacing: 3px;
 
-    font-size: 32px!important;
+    font-size: 30px!important;
 
     color: var(--green);
 }
@@ -513,7 +513,7 @@
 
     .rsvp-text {
 
-        font-size: 21px;
+        font-size: 24px;
     }
 
     .rsvp-grid {

@@ -191,12 +191,12 @@
 
 /* MESSAGE */
 .story-message {
-    max-width: 700px;
+    max-width: 800px;
 
     margin: auto;
     margin-top: 80px;
 
-    font-size: 20px;
+    font-size: 26px;
     line-height: 1.9;
 
     color: var(--green);
@@ -272,7 +272,7 @@
     }
 
     .story-message {
-        font-size: 18px;
+        font-size: 22px;
     }
 }/* MOBILE */
 @media(max-width: 900px) {
@@ -343,7 +343,7 @@
     }
 
     .story-message {
-        font-size: 18px;
+        font-size: 24px;
     }
 }
 /* MOBILE */
@@ -415,7 +415,7 @@
     }
 
     .story-message {
-        font-size: 18px;
+        font-size: 22px;
     }
 }
 /* ========================= */
