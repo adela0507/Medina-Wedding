@@ -92,6 +92,7 @@ body {
 /* CONTENT */
 
 .hero-content {
+    margin-top: -20px;
     position: absolute;
     z-index: 5;
 
@@ -107,7 +108,7 @@ body {
 
     gap: 18px;
 
-    padding: 0 30px;
+    padding: 0 40px;
 }
 
 /* NUME */
@@ -136,8 +137,9 @@ body {
 
 .date {
     font-size: clamp(2rem, 3vw, 3rem);
+    margin-top: 70px;
 
-    letter-spacing: 10px;
+    letter-spacing: 8px;
 
     color: #f3f1ea;
 
@@ -148,7 +150,7 @@ body {
 
 .scroll-hint {
 
-    margin-top: 6px;
+    margin-top: 40px;
 
     background: rgba(255, 255, 255, .12);
 
@@ -194,8 +196,8 @@ body {
 @media(max-width:900px) {
 
     .date {
-        font-size: 30px;
-        letter-spacing: 6px;
+        font-size: 28px;
+        letter-spacing: 4px;
     }
 }
 
@@ -238,7 +240,7 @@ body {
     }
 
     .date {
-        font-size: 2.2rem;
+        font-size: 28px;
         letter-spacing: 2px;
     }
 
