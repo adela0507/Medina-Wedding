@@ -16,7 +16,7 @@
 
 .timeline-main-title {
   font-family: "Great Vibes", cursive;
-  font-size: 70px;
+  font-size: 60px;
   color: #5f6f52;
   margin-bottom: 80px;
 }
@@ -47,14 +47,14 @@
 }
 
 .timeline-date {
-  font-size: 16px;
+  font-size: 35px;
   letter-spacing: 2px;
   color: #888;
   margin-bottom: 10px;
 }
 
 .timeline-location {
-  font-size: 20px;
+  font-size: 35px;
   color: #333;
   margin-bottom: 25px;
 }
