@@ -196,7 +196,7 @@
     margin: auto;
     margin-top: 80px;
 
-    font-size: 26px;
+    font-size: 35px;
     line-height: 1.3;
 
     color: var(--green);
@@ -272,7 +272,7 @@
     }
 
     .story-message {
-        font-size: 23px;
+        font-size: 25px;
     }
 }/* MOBILE */
 @media(max-width: 900px) {
@@ -343,7 +343,7 @@
     }
 
     .story-message {
-        font-size: 24px;
+        font-size: 25px;
     }
 }
 /* MOBILE */
@@ -415,7 +415,7 @@
     }
 
     .story-message {
-        font-size: 22px;
+        font-size: 25px;
     }
 }
 /* ========================= */
