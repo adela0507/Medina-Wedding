@@ -240,7 +240,7 @@ body {
     }
 
     .date {
-        font-size: 28px;
+        font-size: 28px !important;
         letter-spacing: 2px;
     }
 
