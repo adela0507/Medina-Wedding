@@ -1,4 +1,10 @@
-import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
+import {
+  ChangeDetectorRef,
+  Component,
+  NgZone,
+  OnDestroy,
+  OnInit
+} from '@angular/core';
 
 @Component({
   selector: 'app-countdown',
@@ -6,14 +12,18 @@ import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
   styleUrls: ['./countdown.css']
 })
 export class CountdownComponent implements OnInit, OnDestroy {
-  constructor(private cdr: ChangeDetectorRef) {}
+
+  constructor(
+    private cdr: ChangeDetectorRef,
+    private ngZone: NgZone
+  ) {}
 
   targetDate = new Date('September 12, 2026 00:00:00');
 
-  days: string = '00';
-  hours: string = '00';
-  minutes: string = '00';
-  seconds: string = '00';
+  days = '00';
+  hours = '00';
+  minutes = '00';
+  seconds = '00';
 
   private intervalId: any;
 
@@ -21,21 +31,38 @@ export class CountdownComponent implements OnInit, OnDestroy {
 
     this.updateCountdown();
 
-    this.intervalId = setInterval(() => {
-      this.updateCountdown();
-    }, 1000);
+    this.ngZone.runOutsideAngular(() => {
+
+      this.intervalId = setInterval(() => {
+
+        this.ngZone.run(() => {
+
+          this.updateCountdown();
+
+          this.cdr.detectChanges();
+
+        });
+
+      }, 1000);
+
+    });
 
   }
 
   ngOnDestroy(): void {
-    clearInterval(this.intervalId);
+
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+
   }
 
   private updateCountdown(): void {
 
-    const now =  Date.now();
+    const now = Date.now();
 
-    const distance = this.targetDate.getTime() - now;
+    const distance =
+      this.targetDate.getTime() - now;
 
     if (distance <= 0) {
 
@@ -74,6 +101,10 @@ export class CountdownComponent implements OnInit, OnDestroy {
   }
 
   private formatTime(value: number): string {
-    return value < 10 ? `0${value}` : `${value}`;
+
+    return value < 10
+      ? `0${value}`
+      : `${value}`;
+
   }
 }
