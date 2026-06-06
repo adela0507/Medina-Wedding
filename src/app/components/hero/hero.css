@@ -288,9 +288,9 @@ body {
 
     .date {
 
-        margin-top: 60px;
+        margin-top: 80px;
 
-        font-size: 2rem;
+        font-size: 30px !important;
 
         letter-spacing: 4px;
     }
