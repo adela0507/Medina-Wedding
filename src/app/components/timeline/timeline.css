@@ -47,15 +47,15 @@
 }
 
 .timeline-date {
-  font-size: 35px;
+  font-size: 23px !important;
   letter-spacing: 2px;
-  color: #888;
+  color: #000000 !important;
   margin-bottom: 10px;
 }
 
 .timeline-location {
-  font-size: 35px;
-  color: #333;
+  font-size: 25px !important;
+  color: #000000;
   margin-bottom: 25px;
 }
 

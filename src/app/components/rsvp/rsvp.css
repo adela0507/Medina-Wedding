@@ -449,7 +449,7 @@
 
     letter-spacing: 3px;
 
-    font-size: 30px!important;
+    font-size: 32px!important;
 
     color: var(--green);
 }
@@ -503,7 +503,8 @@
 
     .rsvp-title {
 
-        font-size: 4.5rem;
+        font-size: 4.2rem;
+        line-height: 1.2;
     }
 
     .line {
@@ -513,7 +514,8 @@
 
     .rsvp-text {
 
-        font-size: 24px;
+        font-size: 25px;
+        line-height: 1.5;
     }
 
     .rsvp-grid {
@@ -557,7 +559,9 @@
 
     .final-message p {
 
-        font-size: 22px;
+        font-size: 25px;
+        line-height: 1.2;
+        margin-bottom: 50px !important;
     }
 
     .signature {
