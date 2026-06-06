@@ -248,7 +248,7 @@
     .rotate-right {
         right: 0;
         top: 30px;
-        transform: rotate(7deg);
+        transform: rotate(6deg);
     }
 
     .center-photo {
@@ -319,7 +319,7 @@
     .rotate-right {
         right: 0;
         top: 30px;
-        transform: rotate(7deg);
+        transform: rotate(6deg);
     }
 
     .center-photo {
@@ -389,9 +389,9 @@
     }
 
     .rotate-right {
-        right: 0;
+        right: -10px;
         top: 30px;
-        transform: rotate(7deg);
+        transform: rotate(6deg);
     }
 
     .center-photo {
