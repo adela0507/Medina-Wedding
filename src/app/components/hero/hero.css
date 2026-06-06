@@ -240,13 +240,14 @@ body {
     }
 
     .date {
-        font-size: 28px !important;
+        margin-top: 80px;
+        font-size: 35px !important;
         letter-spacing: 2px;
     }
 
     .scroll-hint {
         padding: 14px 28px;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
