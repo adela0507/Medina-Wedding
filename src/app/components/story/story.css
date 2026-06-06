@@ -389,7 +389,7 @@
     }
 
     .rotate-right {
-        right: -10px;
+        right: -30px;
         top: 30px;
         transform: rotate(6deg);
     }
